@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutus</title>
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<!-- Bootstrap Bundle JS (with Popper) -->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+    <section class="about-intro">
+  <h2>About Us</h2>
+  <p>Welcome to PCEA Gatiiguru Church, a congregation of the Presbyterian Church of East Africa (PCEA), rooted in faith, community service, and the gospel of Jesus Christ.</p>
+</section>
+
+<section class="about-pcea">
+  <h3>About the Presbyterian Church of East Africa (PCEA)</h3>
+  <p>The PCEA traces its roots to the Church of Scotland Mission in the 1890s. It is founded on Reformed theology, upholding the authority of Scripture, faith in Christ, grace alone, and the glory of God alone.</p>
+  <p><strong>Mission:</strong> To Empower, Equip, Build & Transform God’s people for effective service through Preaching, Teaching & Witnessing in words & deeds.</p>
+  <p><strong>Vision:</strong> To be a Great and Dynamic Godly Model Church for holistic Service in Pursuance of the Great Commission.</p>
+</section>
+
+<section class="about-gatiiguru">
+  <h3>About PCEA Gatiiguru Church</h3>
+  <p>PCEA Gatiiguru Church is a vibrant congregation under [name of Presbytery], serving the people of [villages/areas]. Since its founding in [year], the church has been a place of worship, fellowship, and community outreach.</p>
+
+  <h4>Our Ministries</h4>
+  <ul>
+    <li>Women’s Guild</li>
+    <li>PCMF (Men’s Fellowship)</li>
+    <li>Youth Fellowship (PYF)</li>
+    <li>Sunday School</li>
+    <li>Choir</li>
+    <li>Justice, Peace & Reconciliation Committee (JPRC)</li>
+    <li>Development Committee</li>
+    <li>Education Committee</li>
+    <li>Boys’ & Girls’ Brigade</li>
+  </ul>
+
+  <h4>Leadership</h4>
+  <p>Our church is led by [Rev./Elder Name], together with elders and ministry leaders committed to serving God and the community.</p>
+</section>
+
+<section class="about-cta">
+  <p>We warmly invite you to worship with us and become part of our church family.</p>
+  <a href="{{ url_for('register') }}" class="btn">Register</a><br>
+  <a href="{{ url_for('index') }}" class="btn">Find Us on Google Maps</a>
+</section>
+{% include 'partials/footer.html' %}
+</body>
+</html>

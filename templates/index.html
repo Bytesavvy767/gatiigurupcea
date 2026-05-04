@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<!-- Bootstrap Bundle JS (with Popper) -->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+<body>
+    {% include 'partials/navbar.html' %}
+    {% include 'partials/carousel.html' %}
+
+    <section class="container mt-5">
+        <h2>Welcome to Our Church – A Place of Worship, Fellowship, and Service.</h2>
+        <p>We're glad you're here. Join us in worship and fellowship.</p>
+        <a href="aboutus.html" class="ctabtn">Learn More</a>
+    </section>
+    <section class="service-times">
+      <h2>Our Service Times</h2>
+      <ul>
+        <li><strong>Sunday Kikuyu Service:</strong> 10:00 AM – 12:30 PM</li>
+        <li><strong>Sunday English Service:</strong> 8:30 AM - 9:30 AM</li>
+        <li><strong>Youth Fellowship:</strong> 3:00 PM – 4:00 PM</li>
+        <li><strong>Sunday School:</strong> Sunday 8:30 AM - 9:30 AM</li>
+      </ul>
+    </section>
+    <section class="ministries">
+      <h2>Our Ministries</h2>
+        <div class="ministry-list">
+          <div class="ministry-card">
+            <h3>👩‍🦳 Women’s Guild</h3>
+            <p>Empowering women in faith, service, and leadership.</p>
+        </div>
+        <div class="ministry-card">
+          <h3>👨 PCMF (Men’s Fellowship)</h3>
+          <p>Building strong men of faith to lead and serve the community.</p>
+        </div>
+        <div class="ministry-card">
+          <h3>🙌 Youth Fellowship</h3>
+          <p>Inspiring young people to grow spiritually and socially in Christ.</p>
+        </div>
+        <div class="ministry-card">
+          <h3>👧 Sunday School</h3>
+          <p>Raising children in the knowledge and love of God.</p>
+        </div>
+        <div class="ministry-card">
+          <h3>🎶 Church Choir</h3>
+          <p>Leading the congregation in praise and worship through music.</p>
+        </div>
+        <div class="ministry-card">
+          <h3>✌️ JPRC (Justice, Peace & Reconciliation Committee)</h3>
+          <p>Promoting justice, peace, and reconciliation within the church and community through dialogue, prayer, and action.</p>
+        </div>
+        <div class="ministry-card">
+          <h3>🏗️ Development Committee</h3>
+          <p>Overseeing church development projects and infrastructure growth.</p>
+        </div>
+        
+        <div class="ministry-card">
+          <h3>✝️ Brigade</h3>
+          <p>A Christian uniformed group nurturing children and youth in discipline, service, and faith.</p>
+        </div>
+        
+        <div class="ministry-card">
+          <h3>📚 Education Committee</h3>
+          <p>Supporting students through scholarships, mentorship, and financial aid for school fees.</p>
+        </div>
+      </div>
+
+</section>
+{% include 'partials/location.html' %}
+{% include 'partials/footer.html' %}
+</body>
+</html>

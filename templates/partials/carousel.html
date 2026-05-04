@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='images/img2.jpg') }}" class="d-block w-100" alt="img1">
+      <div class="carousel-caption">
+        <h3>Kihumbuini Parish</h3>
+        <p>A Parish United in Faith and Love.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='images/img1.jpg') }}" class="d-block w-100" alt="img2">
+      <div class="carousel-caption">
+        <h3>Kihumbuini Presbytery</h3>
+        <p>Guided by the Word, United in Mission.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='images/img3.jpg') }}" class="d-block w-100" alt="img3">
+      <div class="carousel-caption">
+        <h3>Church Main Gate</h3>
+        <p>A doorway to faith, fellowship, and service.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='images/img4.jpg') }}" class="d-block w-100" alt="img4">
+      <div class="carousel-caption">
+        <h3>Church Main Entrance</h3>
+        <p>Step into His presence with joy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+
+<!-- Bootstrap JS Bundle (with Popper) -->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
